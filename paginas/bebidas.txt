@@ -1,0 +1,18 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Bebidas</h1>
+        <ul>
+            <li><a href="paginas/usuario.html">Usuario</a></li>
+            <li><a href="paginas/carrito.html">Carrito</a></li>
+            <li><a href="paginas/favoritos.html">Mis favoritos <i class="fa-regular fa-heart"></i></a></li>
+			<li><a href="paginas/colecction.html">Fukusuke Collection</a></li>
+			<li><a href="paginas/special.html">Special Rolls</a></li>
+            <li><a href="paginas/tempura.html">Tempura & Panko Rolls</a></li>
+			<li><a href="paginas/sashimis.html">Sashimis</a></li>
+			<li><a href="paginas/ceviches.html">Ceviches</a></li>
+        </ul>
+        <p>Esta es la página de bebidas.</p>
+    </body>
+</html>
