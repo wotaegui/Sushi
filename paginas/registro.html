@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>福助 Sushi</title>
-		<link rel="stylesheet" href="california.css" />
-	</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Logo</title>
+	<link rel="stylesheet" href="registro.css" />
+</head>
+<body>
+    <!-- Insertar el logo -->
+    
+</body>
+</html>
 	<body>
 		<header>
 			<div class="container-hero">
@@ -30,12 +30,12 @@
 
 					<div class="container-user">
 						<ul>
-						<li><a href="#">Usuario</a></li></ul>
+						<li><a href="login.html">Usuario</a></li></ul>
 						<i class="fa-solid fa-user"></i>						
 						<i class="fa-solid fa-basket-shopping"></i>
 						<div class="content-shopping-cart">
 							<ul>
-							<li><a href="#">Carrito</a></li></ul>
+							<li><a href="carrito.html">Carrito</a></li></ul>
 							<span class="text">Carrito</span>
 							<span class="number">(0)</span>
 						</div>
@@ -73,6 +73,7 @@
             --background-color: #000;
             --dark-color: #fffbf4;
         }
+
         html {
             font-size: 62.5%;
             font-family: 'Noto Sans JP', sans-serif;
@@ -110,6 +111,13 @@
 
         .container-logo i {
             font-size: 3rem;
+            color: var(--dark-color);
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-size: 2rem;
         }
 
         .container-user {
@@ -131,51 +139,87 @@
             padding-left: 1rem;
         }
 
-        .cart-container {
+        .register-container {
             max-width: 120rem;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-            text-align: center;
+            margin: 4rem auto;
+            padding: 0 2rem;
         }
 
-        .cart-empty {
+        .register-form {
             background-color: #fffbf4;
-            border-radius: 1rem;
-            padding: 4rem;
-            max-width: 60rem;
+            max-width: 50rem;
             margin: 0 auto;
+            padding: 4rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 10px rgba(255, 251, 244, 0.1);
         }
 
-        .cart-empty h2 {
-            font-size: 2.5rem;
+        .register-form h2 {
             color: var(--primary-color);
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .form-group {
             margin-bottom: 2rem;
         }
 
-        .cart-empty p {
+        .form-group input {
+            width: 100%;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 0.5rem;
             font-size: 1.6rem;
-            color: #777;
-            margin-bottom: 2rem;
+            color: #333;
+            transition: border-color 0.3s ease;
         }
 
-        .btn-continue-shopping {
-            display: inline-block;
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .form-group input::placeholder {
+            color: #777;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 1.5rem;
             background-color: var(--primary-color);
-            color: #fffbf4;
-            padding: 1rem 3rem;
-            text-decoration: none;
+            color: #fff;
+            border: none;
             border-radius: 3rem;
             font-size: 1.6rem;
+            cursor: pointer;
             transition: background-color 0.3s ease;
         }
 
-        .btn-continue-shopping:hover {
+        button[type="submit"]:hover {
             background-color: #d43a22;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 1.4rem;
+            color: #777;
+        }
+
+        .login-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
         }
 
         .footer {
             background-color: var(--primary-color);
             padding: 3rem 0;
+            margin-top: 4rem;
         }
 
         .container-footer {
@@ -187,6 +231,7 @@
             display: flex;
             justify-content: space-around;
             align-items: flex-start;
+            padding: 0 2rem;
         }
 
         .contact-info, .information {
@@ -200,6 +245,7 @@
             font-size: 1.6rem;
             text-transform: uppercase;
             margin-bottom: 1rem;
+            color: #fff;
         }
 
         .contact-info ul, .information ul {
@@ -211,26 +257,76 @@
             font-size: 1.4rem;
         }
 
+        .information ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .information ul li a:hover {
+            color: var(--dark-color);
+        }
+
         .copyright {
             text-align: center;
             padding-top: 2rem;
             border-top: 1px solid #d2b495;
+            margin-top: 3rem;
         }
 
         .copyright p {
             font-size: 1.4rem;
             color: #fff;
         }
-    </style>
-</head>
-<body>
 
-    <main class="cart-container">
-        <div class="cart-empty">
-            <h2>Tu Carrito está Vacío</h2>
-            <p>Parece que aún no has agregado ningún producto a tu carrito. ¡Explora nuestro menú y encuentra tus sushis favoritos!</p>
-            <a href="#" class="btn-continue-shopping">Continuar Comprando</a>
-        </div>
+        @media (max-width: 768px) {
+            .register-form {
+                padding: 3rem;
+            }
+
+            .menu-footer {
+                flex-direction: column;
+                gap: 3rem;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .register-form {
+                padding: 2rem;
+            }
+
+            .register-form h2 {
+                font-size: 2.4rem;
+            }
+
+            .form-group input {
+                padding: 1.2rem;
+            }
+        }
+    </style>
+
+    <main class="register-container">
+        <form class="register-form" action="#" method="POST">
+            <h2>Crear Cuenta</h2>
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="Nombre de Usuario" required />
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Correo Electrónico" required />
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Contraseña" required />
+            </div>
+            <div class="form-group">
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmar Contraseña" required />
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" name="phone" placeholder="Teléfono (Opcional)" />
+            </div>
+            <button type="submit">Registrarse</button>
+            <p class="login-link">¿Ya tienes una cuenta? <a href="login.html">Iniciar Sesión</a></p>
+        </form>
     </main>
 
     <footer class="footer">

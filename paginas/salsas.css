@@ -66,24 +66,22 @@ html {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
+    
 }
 
+img {
+	display: block;
+	margin: 0 auto;
+}
 .container-logo i {
 	font-size: 3rem;
-}
-
-.container-logo h1 a {
-	text-decoration: none;
-	color: #fffbf4;
-	font-size: 3rem;
-	text-transform: uppercase;
-	letter-spacing: -1px;
 }
 
 .container-user {
 	display: flex;
 	gap: 1rem;
 	cursor: pointer;
+	
 }
 
 .container-user .fa-user {
@@ -99,10 +97,21 @@ html {
 	padding-left: 1rem;
 }
 
+.container-user ul li a {
+    color: #f64f38;
+}
+
+
 .content-shopping-cart {
 	display: flex;
 	flex-direction: column;
 }
+
+.content-shopping-cart .text,
+.content-shopping-cart .number {
+    color: #f64f38;
+}
+
 
 /* ************* NAVBAR ************* */
 .container-navbar {
@@ -204,7 +213,7 @@ html {
 /*               BANNER               */
 /* ********************************** */
 .banner {
-	background-image:none,
+	background-image: none,
 		url('img/bsalsas.jpg');
 	height: 5%;
 	background-size: cover;
@@ -329,17 +338,17 @@ html {
 	background-repeat: no-repeat;
 }
 
-.category-bebidas {
+.category-salsas {
 	background-image: linear-gradient(#00000080, #00000080),
-		url('img/expreso-category.jpg');
+		url('img/capuchino-category.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
-.category-salsas {
+.category-bebidas {
 	background-image: linear-gradient(#00000080, #00000080),
-		url('img/capuchino-category.jpg');
+		url('img/expreso-category.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -721,12 +730,18 @@ html {
 	grid-template-columns: repeat(3, 1fr) 30rem;
 	gap: 3rem;
 	justify-items: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 20px 0;
+
 }
 
 .title-footer {
 	font-weight: 600;
 	font-size: 1.6rem;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .contact-info,
@@ -736,6 +751,7 @@ html {
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
+	margin: 0 10px;
 }
 
 .contact-info ul,

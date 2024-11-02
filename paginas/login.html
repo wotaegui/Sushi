@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Logo</title>
+    <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                    <i class="fa-solid fa-truck"></i>
+                    <div class="content-customer-support">
+                        <span class="text">Contacto Delivery</span>
+                        <span class="number">+56978721688</span>
+                    </div>
+                </div>
+
+                <div class="container-logo">
+                    <i class="fa-solid fa-sushi-roll"></i>
+                    <img class="logo" src="img/logo.jpg" alt="Logo de la página" width="150" height="auto">
+                </div>
+
+                <div class="container-user">
+                    <ul>
+                        <li><a href="login.html">Usuario</a></li>
+                    </ul>
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <div class="content-shopping-cart">
+                        <ul>
+                            <li><a href="carrito.html">Carrito</a></li>
+                        </ul>
+                        <span class="text">Carrito</span>
+                        <span class="number">(0)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="paginas/colection.html">Fukusuke Collection <i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="paginas/special.html">Special Rolls</a></li>
+                    <li><a href="paginas/tempura.html">Tempura & Panko Rolls</a></li>
+                    <li><a href="paginas/sashimis.html">Sashimis</a></li>
+                    <li><a href="paginas/ceviches.html">Ceviches</a></li>
+                </ul>
+
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar..." />
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <main class="register-container">
+        <form class="register-form" action="#" method="POST">
+            <h2>Iniciar Sesión</h2>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Correo Electrónico" required />
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Contraseña" required />
+            </div>
+            <button type="submit">Iniciar Sesión</button>
+            <p class="login-link">¿No tienes una cuenta? <a href="registro.html">Crear cuenta</a></p>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>Dirección: Mar de Chile 516, Maipú, Santiago, Chile.</li>
+                        <li>Teléfono: +56978721688</li>
+                        <li>Email: fukusuke@support.com</li>
+                    </ul>
+                </div>
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Desarrollado por Whitney Otaegui &copy; 1996</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+</body>
+</html>
